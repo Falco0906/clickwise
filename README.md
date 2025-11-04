@@ -1,12 +1,79 @@
-# Getting Started with Create React App
+# Clickwise - Email Scam Detector
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clickwise is a web application designed to help users identify potential email scams using machine learning and pattern matching.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- Real-time email content analysis
+- Machine learning-powered scam detection
+- Pattern matching for known scam indicators
+- User-friendly interface
+- Responsive design
 
-### `npm start`
+## 🛠️ Prerequisites
+
+- Node.js (v16 or later)
+- npm (comes with Node.js)
+
+## 🚀 Quick Start
+
+### Option 1: One-Command Setup (Recommended)
+
+```bash
+# Make the run script executable (only needed once)
+chmod +x run.sh
+
+# Run the application (this will install dependencies and start the dev server)
+./run.sh
+```
+
+### Option 2: Manual Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/clickwise.git
+   cd clickwise
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+4. **Open in browser**
+   The application will open automatically in your default browser at [http://localhost:3000](http://localhost:3000)
+
+## 📦 Available Scripts
+
+- `npm start` - Start the development server
+- `npm run build` - Build the app for production
+- `npm test` - Run tests
+- `npm run setup` - Run setup script (installs dependencies)
+- `npm run dev` - Run setup and start the development server
+
+## 🔍 How It Works
+
+The application uses a combination of:
+- Pattern matching for known scam indicators
+- Machine learning (TensorFlow.js with Universal Sentence Encoder)
+- Heuristic analysis of email content
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

@@ -2,6 +2,7 @@
   "name": "clickwise",
   "version": "0.1.0",
   "private": true,
+  "description": "Clickwise - A web application for detecting and preventing online scams",
   "dependencies": {
     "@tensorflow-models/universal-sentence-encoder": "^1.3.3",
     "@tensorflow/tfjs": "^4.22.0",
@@ -21,7 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "setup": "bash setup.sh",
+    "dev": "bash run.sh",
+    "postinstall": "echo 'Run \"npm run setup\" to set up the project after installation'"
   },
   "eslintConfig": {
     "extends": [
