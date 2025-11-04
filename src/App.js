@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import EmailScanner from './components/EmailScanner';
 import Home from './pages/Home';
 import Learn from './pages/Learn';
 import Protect from './pages/Protect';
@@ -20,7 +21,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/learn" element={<Learn />} />
-            <Route path="/protect" element={<Protect />} />
+            <Route path="/protect" element={
+              <div className="py-12 bg-gray-50">
+                <EmailScanner />
+              </div>
+            } />
             <Route path="/community" element={<Community />} />
             <Route path="/report" element={<Report />} />
             <Route path="/signup" element={<Signup />} />
